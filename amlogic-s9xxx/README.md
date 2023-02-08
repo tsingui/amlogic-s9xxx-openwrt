@@ -13,16 +13,14 @@ etc/config/amlogic
 usr/sbin
 ```
 
-- bootfs: This is the personalized configuration file in the `/boot` directory of the OpenWrt system.
-
 - patches: The files in the [patches](https://github.com/ophub/amlogic-s9xxx-openwrt/tree/main/amlogic-s9xxx/common-files/patches) directory are patch files, which are integrated when build kernel files.
 
 ## Other directory descriptions
 
-- When building an OpenWrt system, the required Armbian related files will be automatically downloaded from the [ophub/amlogic-s9xxx-armbian](https://github.com/ophub/amlogic-s9xxx-armbian) repository. Contains the following directories: `u-boot` and related files in `common-files` directory.
+- When building an OpenWrt system, the required Armbian related files will be automatically downloaded from the [ophub/amlogic-s9xxx-armbian](https://github.com/ophub/amlogic-s9xxx-armbian) repository. Contains related files in the `u-boot`, `common-files` and `platform-files` directories.
 
 - The required firmware will be automatically downloaded from the [ophub/firmware](https://github.com/ophub/firmware) repository to the `common-files/rootfs/lib/firmware` directory.
 
-- The required kernels will be automatically downloaded from the [ophub/kernel](https://github.com/ophub/kernel) repository to the `amlogic-kernel` directory.
+- The required kernels will be automatically downloaded from the [ophub/kernel](https://github.com/ophub/kernel) repository to the `kernel` directory.
 
 - The required install/update etc scripts will be automatically downloaded from the [ophub/luci-app-amlogic](https://github.com/ophub/luci-app-amlogic) repository to the `common-files/rootfs/usr/sbin` directory.
